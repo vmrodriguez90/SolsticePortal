@@ -1,0 +1,14 @@
+{% if page.submenu %}
+
+<div class="sub-menu">
+    <ul class="nav justify-content-center">
+        {% for item in page.submenu %}
+        <li class="nav-item">
+            <label for="{{ item.url }}">{{ item.title }}</label>
+            <input type="radio" id="{{ item.url}}" name="tabs" class="radio">
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
+{% endif %}
