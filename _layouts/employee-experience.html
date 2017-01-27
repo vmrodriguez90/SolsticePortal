@@ -6,7 +6,7 @@ layout: default
     {% for item in page.submenu %}
         <article class="submenu-content" id="{{ item.url }}-tab">
             {% include {{ item.urlHtml }} %}
-            <form method="POST" action="https://api.staticman.net/v2/entry/vmrodriguez90/Portal/master">
+            <form method="POST" action="https://api.staticman.net/v2/entry/vmrodriguez90/SolsticePortal/master">
                 <input name="options[redirect]" type="hidden" value="{{ item.url }}">
                 <input name="options[slug]" type="hidden" value="{{ page.slug }}">
 
